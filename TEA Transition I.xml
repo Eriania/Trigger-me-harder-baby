@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<TriggernometryExport Version="1">
+  <ExportedFolder Id="f9b251e1-bc48-4e3b-94c5-99ec8fe3d885" Name="2. Transition I" Enabled="true">
+    <Folders />
+    <Triggers>
+      <Trigger Enabled="true" Name="Alpha Sword Timers v0.9" Id="edb953cc-371b-4189-9cf3-fa10e817f09b" RegularExpression="0D:Living Liquid HP at 0%.">
+        <Actions>
+          <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="AS_x" VariableExpression="1800" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="2" VariableOp="SetNumeric" VariableName="AS_y" VariableExpression="600" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="3" VariableOp="SetNumeric" VariableName="AS1T" VariableExpression="13.5" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="4" VariableOp="SetNumeric" VariableName="AS2T" VariableExpression="18.4" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="5" VariableOp="SetNumeric" VariableName="AS3T" VariableExpression="23.0" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="6" VariableOp="SetNumeric" VariableName="AS4T" VariableExpression="27.5" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="7" AuraImageMode="StretchImage" AuraName="A4_Bg" AuraImage="E:\Pictures\FF14\Trigger Resources\CCicon.png" AuraXIniExpression="${var:AS_x}-150" AuraYIniExpression="${var:AS_y}-30" AuraWIniExpression="150" AuraHIniExpression="150" AuraOIniExpression="100" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="8" AuraImageMode="StretchImage" AuraName="A4_Bg" AuraImage="E:\Pictures\FF14\Trigger Resources\CCicon.png" AuraXIniExpression="${var:AS_x}-150" AuraYIniExpression="${var:AS_y}-30" AuraWIniExpression="150" AuraHIniExpression="150" AuraOIniExpression="100" TextAuraAlignment="TopLeft" TextAuraEffect="Bold" TextAuraFontSize="72" TextAuraForeground="White" TextAuraName="limitcut" TextAuraExpression="${var:limitCutNumber}" TextAuraXIniExpression="${var:AS_x}-103" TextAuraYIniExpression="${var:AS_y}-5" TextAuraWIniExpression="80" TextAuraHIniExpression="150" TextAuraOIniExpression="100" TextAuraFontName="Stencil Std" ActionType="TextAura" ExecutionDelayExpression="5">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="9" AuraName="A1_Bar" AuraImage="https://i.imgur.com/7WWFuNF.png" AuraXIniExpression="${var:AS_x}" AuraYIniExpression="${var:AS_y}" AuraWIniExpression="154" AuraHIniExpression="30" AuraOIniExpression="100" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="10" AuraName="A2_Bar" AuraImage="https://i.imgur.com/7WWFuNF.png" AuraXIniExpression="${var:AS_x}" AuraYIniExpression="${var:AS_y}+25" AuraWIniExpression="154" AuraHIniExpression="30" AuraOIniExpression="100" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="11" AuraName="A3_Bar" AuraImage="https://i.imgur.com/7WWFuNF.png" AuraXIniExpression="${var:AS_x}" AuraYIniExpression="${var:AS_y}+50" AuraWIniExpression="154" AuraHIniExpression="30" AuraOIniExpression="100" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="12" AuraName="A4_Bar" AuraImage="https://i.imgur.com/7WWFuNF.png" AuraXIniExpression="${var:AS_x}" AuraYIniExpression="${var:AS_y}+75" AuraWIniExpression="154" AuraHIniExpression="30" AuraOIniExpression="100" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="13" AuraName="A1_Fill" AuraImage="https://i.imgur.com/T3jMwPR.png" AuraXIniExpression="${var:AS_x}" AuraYIniExpression="${var:AS_y}" AuraWIniExpression="154" AuraHIniExpression="30" AuraOIniExpression="100" AuraWTickExpression="152*(((${var:AS1T} * 1000)-${_sincems})/(${var:AS1T} * 1000))" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura" ExecutionDelayExpression="5">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="14" AuraName="A2_Fill" AuraImage="https://i.imgur.com/T3jMwPR.png" AuraXIniExpression="${var:AS_x}" AuraYIniExpression="${var:AS_y}+25" AuraWIniExpression="154" AuraHIniExpression="30" AuraOIniExpression="100" AuraWTickExpression="152*(((${var:AS2T} * 1000)-${_sincems})/(${var:AS2T} * 1000))" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura" ExecutionDelayExpression="5">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="15" AuraName="A3_Fill" AuraImage="https://i.imgur.com/T3jMwPR.png" AuraXIniExpression="${var:AS_x}" AuraYIniExpression="${var:AS_y}+50" AuraWIniExpression="154" AuraHIniExpression="30" AuraOIniExpression="100" AuraWTickExpression="152*(((${var:AS3T} * 1000)-${_sincems})/(${var:AS3T} * 1000))" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura" ExecutionDelayExpression="5">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="16" AuraName="A4_Fill" AuraImage="https://i.imgur.com/T3jMwPR.png" AuraXIniExpression="${var:AS_x}" AuraYIniExpression="${var:AS_y}+75" AuraWIniExpression="154" AuraHIniExpression="30" AuraOIniExpression="100" AuraWTickExpression="152*(((${var:AS4T} * 1000)-${_sincems})/(${var:AS4T} * 1000))" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura" ExecutionDelayExpression="5">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="17" AuraOp="DeactivateAuraRegex" AuraName="A1_[0-9A-Z]{1,4}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura" ExecutionDelayExpression="${var:AS1T}*1000+500">
+            <Condition Enabled="false" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="((${var:AS4T} * 1000)-${_sincems})/(${var:AS4T} * 1000)" ExpressionTypeL="Numeric" ExpressionR="0.01" ExpressionTypeR="Numeric" ConditionType="NumericLessEqual" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="18" AuraOp="DeactivateAuraRegex" AuraName="A2_[0-9A-Z]{1,4}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura" ExecutionDelayExpression="(${var:AS2T}-${var:AS1T})*1000+500" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="((${var:AS4T} * 1000)-${_sincems})/(${var:AS4T} * 1000)" ExpressionTypeL="Numeric" ExpressionR="0.01" ExpressionTypeR="Numeric" ConditionType="NumericLessEqual" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="19" AuraOp="DeactivateAuraRegex" AuraName="A3_[0-9A-Z]{1,4}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura" ExecutionDelayExpression="(${var:AS3T}-${var:AS2T})*1000+500">
+            <Condition Enabled="false" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="((${var:AS4T} * 1000)-${_sincems})/(${var:AS4T} * 1000)" ExpressionTypeL="Numeric" ExpressionR="0.01" ExpressionTypeR="Numeric" ConditionType="NumericLessEqual" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="20" AuraOp="DeactivateAuraRegex" AuraName="A4_[0-9A-Z]{1,4}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura" ExecutionDelayExpression="(${var:AS4T}-${var:AS3T})*1000+500">
+            <Condition Enabled="false" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="((${var:AS4T} * 1000)-${_sincems})/(${var:AS4T} * 1000)" ExpressionTypeL="Numeric" ExpressionR="0.01" ExpressionTypeR="Numeric" ConditionType="NumericLessEqual" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="21" AuraOp="DeactivateAuraRegex" AuraName="A4_[0-9A-Z]{1,4}" TextAuraOp="DeactivateAura" TextAuraFontSize="8.25" TextAuraName="limitcut" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura" ExecutionDelayExpression="(${var:AS4T}-${var:AS3T})*1000+500">
+            <Condition Enabled="false" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="((${var:AS4T} * 1000)-${_sincems})/(${var:AS4T} * 1000)" ExpressionTypeL="Numeric" ExpressionR="0.01" ExpressionTypeR="Numeric" ConditionType="NumericLessEqual" />
+            </Condition>
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+      </Trigger>
+      <Trigger Enabled="true" Name="Limiit Cut Number (From @Lombrax)" Id="0aa0404f-8fd3-42c1-89b8-be1513169adb" RegularExpression="1B:[A-F0-9]{8}:(?&lt;name&gt;[A-Za-z']+ [A-Za-z']+):....:....:00(?&lt;num&gt;[A-F0-9]{2}):....:....:....:">
+        <Actions>
+          <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="limitCutNumber" VariableExpression="hex2dec(${num})-78" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="2" UseTTSTextExpression="${var:limitCutNumber}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" Enabled="False" ActionType="UseTTS" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="3" VariableOp="SetString" VariableName="NSLimitCut" VariableExpression="North" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" Asynchronous="False">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${var:limitCutNumber}" ExpressionTypeL="String" ExpressionR="(1|2|5|6)" ExpressionTypeR="String" ConditionType="RegexMatch" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="4" VariableOp="SetString" VariableName="NSLimitCut" VariableExpression="South" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" Asynchronous="False">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${var:limitCutNumber}" ExpressionTypeL="String" ExpressionR="(1|2|5|6)" ExpressionTypeR="String" ConditionType="RegexNotMatch" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="5" VariableOp="SetString" VariableName="InOutLimitCut" VariableExpression="out" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" Asynchronous="False">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${var:limitCutNumber}" ExpressionTypeL="String" ExpressionR="(1|2|3|4)" ExpressionTypeR="String" ConditionType="RegexMatch" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="6" VariableOp="SetString" VariableName="InOutLimitCut" VariableExpression="in" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" Asynchronous="False">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${var:limitCutNumber}" ExpressionTypeL="String" ExpressionR="(1|2|3|4)" ExpressionTypeR="String" ConditionType="RegexNotMatch" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="7" VariableOp="SetString" VariableName="OrderLimitCut" VariableExpression="first" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" Asynchronous="False">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${var:limitCutNumber}" ExpressionTypeL="String" ExpressionR="(1|3|5|7)" ExpressionTypeR="String" ConditionType="RegexMatch" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="8" VariableOp="SetString" VariableName="OrderLimitCut" VariableExpression="second" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" Asynchronous="False">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${var:limitCutNumber}" ExpressionTypeL="String" ExpressionR="(1|3|5|7)" ExpressionTypeR="String" ConditionType="RegexNotMatch" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="9" UseTTSTextExpression="${var:NSLimitCut}, ${var:limitCutNumber}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="10" TextAuraEffect="Bold" TextAuraFontSize="36" TextAuraOutline="Red" TextAuraName="limitcutterNum" TextAuraExpression="${var:limitCutNumber}" TextAuraXIniExpression="0" TextAuraYIniExpression="200" TextAuraWIniExpression="1920" TextAuraHIniExpression="500" TextAuraOIniExpression="100" TextAuraTTLTickExpression="10-${_since}" TextAuraUseOutline="True" TextAuraFontName="Microsoft Sans Serif" Enabled="False" ActionType="TextAura" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="11" TextAuraEffect="Bold" TextAuraFontSize="36" TextAuraOutline="Red" TextAuraName="limitcutter" TextAuraExpression="${var:NSLimitCut}: ${var:limitCutNumber}" TextAuraXIniExpression="0" TextAuraYIniExpression="200" TextAuraWIniExpression="1920" TextAuraHIniExpression="500" TextAuraOIniExpression="100" TextAuraTTLTickExpression="10-${_since}" TextAuraUseOutline="True" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+        </Actions>
+        <Condition Enabled="true" Grouping="And">
+          <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivparty[1].name}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+          <ConditionSingle Enabled="true" ExpressionL="hex2dec(${num})-78" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
+          <ConditionSingle Enabled="true" ExpressionL="hex2dec(${num})-78" ExpressionTypeL="Numeric" ExpressionR="8" ExpressionTypeR="Numeric" ConditionType="NumericLessEqual" />
+        </Condition>
+      </Trigger>
+    </Triggers>
+  </ExportedFolder>
+</TriggernometryExport>
